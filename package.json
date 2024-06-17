@@ -1,0 +1,29 @@
+{
+  "name": "@chenyfan/cdnobject",
+  "version": "0.0.0-beta-001",
+  "description": "A **normal** front-end CDN object selector.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrazyCreativeDream/CDNObject.git"
+  },
+  "author": "CyanFalse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrazyCreativeDream/CDNObject/issues"
+  },
+  "homepage": "https://github.com/CrazyCreativeDream/CDNObject#readme",
+  "devDependencies": {
+    "compression-webpack-plugin": "^11.1.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@chenyfan/cache-db": "^1.1.4",
+    "pako": "^2.1.0"
+  }
+}
