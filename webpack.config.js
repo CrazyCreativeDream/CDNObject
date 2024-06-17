@@ -7,6 +7,6 @@ export default {
     plugins: [new CompressionPlugin({
         test: /\.js(\?.*)?$/i,
     })],
-    //mode: 'production'
-    mode: 'development'
+    mode: 'production'
+    //mode: 'development'
 }

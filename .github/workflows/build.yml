@@ -1,4 +1,4 @@
-name: CyanBlog CI
+name: BundleCI
 on:
   - push
 jobs:

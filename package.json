@@ -1,6 +1,6 @@
 {
   "name": "@chenyfan/cdnobject",
-  "version": "0.0.0-beta-001",
+  "version": "0.0.0-beta-002",
   "description": "A **normal** front-end CDN object selector.",
   "main": "index.js",
   "type": "module",

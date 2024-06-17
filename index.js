@@ -1,6 +1,6 @@
 import '@chenyfan/cache-db'
 import tarball from './src/tarball.js'
-import { ungzip } from "pako"
+//import { ungzip } from "pako" //Too Big
 import templatecdn from "./template/cdn.js"
 import parallel_fetch from "./src/parallel_fetch.js"
 !(() => {
@@ -89,6 +89,12 @@ import parallel_fetch from "./src/parallel_fetch.js"
                         .then(res => res["dist-tags"].latest)
                         .catch(err => { return null })
                 }
+
+                if(typeof config.ungzip !== 'function') {
+                    console.warn('CDNObject: ungzip function not found, pls import pako before inistantiating CDNObject,GetFileFromNPMPackageFunction will not work')
+                    return;
+                }
+
                 const RegistryCacheKey = `${this.var.PACKAGE_SCOPE ? 'this.var.PACKAGE_SCOPE/' : ""}${this.var.PACKAGE_NAME}/${this.var.PACKAGE_VERSION}`
                 this.packageDownloaded = 0
                 this.packageUntared = 0
